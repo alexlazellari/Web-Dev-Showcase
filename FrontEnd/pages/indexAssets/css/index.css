@@ -1,0 +1,41 @@
+/************************ Main styling ************************/
+
+.main-content{
+    grid-area: main;
+    justify-self: center;
+    max-width: 1150px;
+    width: 90%;
+}
+.main-content__header{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main-content__article{
+    margin-bottom: 2.75rem;
+}
+
+.main-content__aside{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2rem;
+}
+
+.main-content__figure{
+    margin-right: 1rem;
+}
+
+.main-content__figure:nth-child(1){
+    margin-right: 0;
+}
+
+.main-content__image{
+    border-radius: 15px;
+    width: 100%;
+}
+
+/************************ End main styling ************************/
+
+
+
+

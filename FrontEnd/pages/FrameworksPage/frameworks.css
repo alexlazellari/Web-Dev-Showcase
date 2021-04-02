@@ -1,0 +1,26 @@
+/************************* Main styling *************************/
+
+.main{
+    margin: 0 auto;
+    max-width: 1150px;
+    width: 90%;
+}
+
+.main__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.main__body{
+    padding: 2rem;
+}
+
+.main__question{
+    margin-bottom: 1rem;
+}
+
+.main__copy{
+    margin-bottom: 1rem;
+}
+
+/************************* End main styling *************************/

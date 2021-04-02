@@ -1,0 +1,85 @@
+/************************ Main styling ************************/
+
+.main{
+    grid-area: main;
+    justify-self: center;
+    max-width: 1400px;
+    width: 90%;
+}
+.main__header{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main__article{
+    margin-bottom: 2.75rem;
+}
+
+.main__aside{
+    margin: 2rem;
+}
+
+.main__image{
+    border-radius: 15px;
+    width: 100%;
+}
+
+/************************ End main styling ************************/
+
+
+
+/************************ Article styling ************************/
+
+.main .card:nth-of-type(2) .card__figure{
+    margin-left: 2rem;
+
+}
+
+.main .card:nth-of-type(3) .card__image{
+    border-radius: 15px;
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(120, 120, 120, .2);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    max-width: 1150px;
+}
+
+.card__figure{
+    margin-right: 2rem;
+}
+
+.card__image{
+    width: 300px;
+}
+
+.card__title{
+    margin-bottom: 1.5rem;
+}
+
+.card__copy{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card__more{
+    border: 1px solid #1c1e21;
+    color: #1c1e21;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    transition: background-color .5s,color .4s;
+}
+
+.card__more:hover,
+.card__more:focus{
+    background-color: #222;
+    color: #fff;
+}
+
+/************************ End article styling ************************/
