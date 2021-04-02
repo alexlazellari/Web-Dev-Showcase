@@ -19,12 +19,13 @@
 body{
     color: #333;
     grid-template:
-    "nav nav" auto
-    "aside main"1fr
-    "footer footer" auto / 250px 1fr;
+    "nav" auto
+    "main" auto
+    "aside" auto
+    "footer" auto / 1fr;
     display: grid;
     font-family: Roboto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -38,8 +39,6 @@ body{
 }
 
 .nav{
-    display: flex;
-    justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 0;
@@ -52,13 +51,14 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 3px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .nav__list{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 30%;
 }
 
 .nav__link{
@@ -75,33 +75,35 @@ body{
 
 .aside{
     grid-area: aside;
-    margin-top: 2rem;
-    justify-self: end;
-}
-
-.aside__image{
-    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 90%;
 }
 
 .aside__list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     list-style-type:none;
-    margin-left:auto;
-    position: sticky;
-    top: 1rem;
+}
+
+.aside__item{
+    padding: 0 .5rem;
 }
 
 .aside__figure{
+    padding-bottom: 1rem;
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 .aside__image{
     border-radius: 100%;
-    width: 130px;
     transition: box-shadow .5s, transform .5s;
+    width: 100px;
 }
 
-.aside__image:hover{
+.aside__image:hover,
+.aside__image:focus{
     box-shadow: 0px 0px 15px 0 rgba(80, 80, 80, .6);
     transform: scale(1.05);
 }
@@ -115,11 +117,12 @@ body{
 .footer{
     background-color: #1c1e21;
     grid-area: footer;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .footer__copyright{
     color: #fff;
+    font-size: .8rem;
     letter-spacing: 2px;
     margin:0 auto;
     max-width: 1400px;
@@ -128,3 +131,79 @@ body{
 }
 
 /************************* End footer styling *************************/
+
+
+
+/************************* Media Queries *************************/
+
+@media screen and ( min-width: 480px ){
+
+    .nav{
+        align-items: center;
+         display: flex;
+         justify-content: space-between;
+    }
+
+    .nav__list{
+        width: 60%;
+    }
+
+    .nav__logo{
+        margin-bottom: 0;
+    }
+
+    .aside__image{
+        border-radius: 100%;
+        transition: box-shadow .5s, transform .5s;
+        width: 120px;
+    }
+} 
+
+@media  screen and ( min-width: 1020px ) {
+    body{
+        color: #333;
+        grid-template:
+        "nav nav" auto
+        "aside main" auto
+        "footer footer" auto / minmax(20%,250px) 1fr;
+        display: grid;
+        font-family: Roboto;
+        min-height: 100vh;
+    }
+
+    .nav__list{
+        width: 40%;
+    }
+
+    .aside{
+        grid-area: aside;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    
+    .aside__list{
+        display: flex;
+        flex-direction: column;
+        list-style-type:none;
+        position: sticky;
+        top:1rem;
+    }
+
+    .aside__image{
+        border-radius: 100%;
+        transition: box-shadow .5s, transform .5s;
+        width: 100px;
+    }
+
+}
+
+@media screen and ( min-width:1580px ) {
+    .aside__image{
+        border-radius: 100%;
+        transition: box-shadow .5s, transform .5s;
+        width: 130px;
+    }
+}
+
+/************************* End Media Queries *************************/
