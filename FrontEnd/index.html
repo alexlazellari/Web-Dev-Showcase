@@ -7,10 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>    
     <!-- Common Styles -->
     <link rel="stylesheet" type="text/css" href="./common/css/common.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./pages/indexAssets/index.css">
+    <!-- JavaScript -->
+    <script src="pages/indexAssets/script.js" defer></script>
 </head>
 
 <body>
@@ -72,23 +76,33 @@
 
 
     <!-- Main content -->
-    <main class="main-content">
-        <header class="main-content__header">
-            <h1 class="main-content__title">Web Development</h1>
+    <main class="main">
+        <figure class="main__figure-blockquote">
+            <blockquote cite="" class="main__blockquote">
+                <p class="main__quote">
+                </p>
+            </blockquote>
+            <figcaption class="main__quotee"></figcaption>
+            <button title="Change Quote" class="main__quote-btn"><i class="fas fa-dice"></i></button>
+        </figure>
+       
+        <header class="main__header">
+            <h1 class="main__title">Web Development</h1>
         </header>
-        <article class="main-content__article">
-            <h2 class="main-content__introduction">Brief introduction to front end</h2>
-            <aside class="main-content__aside">
-                <figure class="main-content__figure">
-                    <img class="main-content__image" src="./pages/indexAssets/images/frontend.png" alt="laptop on a desk">
-                    <figcaption class="main-content__caption">Represantation of front-end development</figcaption>
+       
+        <article class="main__article">
+            <h2 class="main__introduction">Brief introduction to front end</h2>
+            <aside class="main__aside">
+                <figure class="main__figure">
+                    <img class="main__image" src="./pages/indexAssets/images/frontend.png" alt="laptop on a desk">
+                    <figcaption class="main__caption">Represantation of front-end development</figcaption>
                 </figure>
-                <figure class="main-content__figure">
-                    <img class="main-content__image" src="./pages/indexAssets/images/frontend2.png" alt="laptop on a desk">
-                    <figcaption class="main-content__caption">Front-end status</figcaption>
+                <figure class="main__figure">
+                    <img class="main__image" src="./pages/indexAssets/images/frontend2.png" alt="laptop on a desk">
+                    <figcaption class="main__caption">Front-end status</figcaption>
                 </figure>
             </aside>
-            <p class="main-content__paragraph">
+            <p class="main__paragraph">
                 <strong>Web development</strong> is the process of building websites and applications for the
                 internet, or for a private network known as an intranet. Web development is not concerned with the
                 design of a website;
@@ -118,6 +132,7 @@
                 tools that enhance how the user interacts with a website in any browser.<br><br>
             </p>
         </article>
+
     </main>
     <!-- Main content -->
 
