@@ -42,10 +42,27 @@ const quotes = [
   },
 ];
 
+const facts = [
+  {
+    fact:
+      "SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility for relevant searches.",
+  },
+  {
+    fact:
+      " The ability for other developers to read the code is paramount above other concerns, especially if optimization can be handled another way.",
+  },
+  {
+    fact:
+      "At work, we may not always work with people we like. Some backend developers can sometimes look down at front-end developers. Don’t let that get you down. Both jobs come up with easy and hard bits",
+  },
+];
+
 // Variables
 const quoteDOM = document.querySelector(".main__quote");
 const quoteeDOM = document.querySelector(".main__quotee");
 const quoteBtn = document.querySelector(".main__quote-btn");
+const factBtn = document.querySelector(".fact__btn");
+const factCopy = document.querySelector(".fact__copy");
 
 let day = new Date().getDay();
 
@@ -56,8 +73,15 @@ quoteBtn.addEventListener("click", () => {
   updateQuote(rdnNbr);
 });
 
+//Update Quote
 function updateQuote(number) {
   quoteDOM.textContent = quotes[number].quote;
   quoteDOM.setAttribute("cite", quotes[number].cite);
   quoteeDOM.textContent = "― " + quotes[number].quotee;
 }
+
+//Change fact
+factBtn.addEventListener("click", () => {
+  let random = Math.floor(Math.random() * facts.length);
+  factCopy.innerHTML = facts[random].fact;
+});

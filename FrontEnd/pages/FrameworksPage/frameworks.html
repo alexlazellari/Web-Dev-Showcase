@@ -11,26 +11,38 @@
     <link rel="stylesheet" type="text/css" href="../../common/css/common.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./frameworks.css">
+    <!-- JavaScript -->
+    <script src="./frameworks.js" defer></script>
+    <!-- JavaScript Navbar -->
+    <script src="../../common/navbar.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navbar -->
+   <!-- Navbar -->
     
     <header class="header-nav">
         <nav class="nav">
-            <p class="nav__logo">Front End</p>
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
             <ul class="nav__list">
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="../../index.html" class="nav__link">Home</a>
                 </li>
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="../LanguagesPage/languages.html" class="nav__link">Languages</a>
                 </li>
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">Frameworks</a>
                 </li>
             </ul>
+            
         </nav>
     </header>
 
@@ -141,6 +153,32 @@
     </main>
 
     <!-- End main content -->
+
+
+
+    <!-- Aside right -->
+
+      <aside class="facts">
+        <article class="fact">
+            <header class="fact__header">
+                <h2 class="fact__title">Fact</h2>
+            </header>
+            <div class="fact__body">
+                <p class="fact__copy">
+                    Vue was created by Evan You after working for Google using AngularJS in a number of projects. He
+                    later summed up his thought process: "I figured, what if I could just extract the part that I really
+                    liked about Angular and build something really lightweight."
+                </p>
+            </div>
+            <footer class="fact__footer">
+                <div class="fact__actions">
+                    <button class="fact__btn">Change<i class="fas fa-dice"></i></button>
+                </div>
+            </footer>
+        </article>
+    </aside>
+
+    <!-- End aside right -->
 
 
 

@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="../../common/css/common.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./languages.css">
+    <!-- JavaScript -->
+    <script src="./languages.js" defer></script>
+    <!-- JavaScript Navbar -->
+    <script src="../../common/navbar.js" defer></script>
 </head>
 
 <body>
@@ -18,21 +22,29 @@
 
 
     <!-- Navbar -->
-
+    
     <header class="header-nav">
         <nav class="nav">
-            <p class="nav__logo">Front End</p>
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
             <ul class="nav__list">
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="../../index.html" class="nav__link">Home</a>
                 </li>
-                <li class="nav-nav__item">
-                    <a href="../LanguagesPage/languages.html" class="nav__link">Languages</a>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Languages</a>
                 </li>
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="../FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
                 </li>
             </ul>
+            
         </nav>
     </header>
 
@@ -68,7 +80,7 @@
         <article class="card" id="html">
             <aside class="card__header">
                 <figure class="card__figure">
-                    <img class="card__image" src="./images/html-language.png" alt="HTML Logo">
+                    <img class="card__image" srcset="./images/html-language-small.png 280w , ./images/html-language-medium.png 1020w" src="./images/html-language-small.png" alt="HTML Logo">
                 </figure>
             </aside>
             <div class="card__body">
@@ -100,14 +112,14 @@
             </div>
             <aside class="card__header">
                 <figure class="card__figure">
-                    <img class="card__image" src="./images/css-language.png" alt="CSS Logo">
+                    <img class="card__image" srcset="./images/css-language-small.png 280w , ./images/css-language-medium.png 1020w" src="./images/css-language-small.png" alt="CSS Logo">
                 </figure>
             </aside>
         </article>
         <article class="card" id="javascript">
             <aside class="card__header">
                 <figure class="card__figure">
-                    <img class="card__image" src="./images/javascript-language.png" alt="JavaScript Logo">
+                    <img class="card__image" srcset="./images/javascript-language-small.png 280w , ./images/javascript-language-medium.png 1020w" src="./images/javascript-language-small.png" alt="JavaScript Logo">
                 </figure>
             </aside>
             <div class="card__body">
@@ -128,6 +140,32 @@
     </main>
 
     <!-- End main content -->
+
+
+    
+    <!-- Aside right -->
+
+    <aside class="facts">
+        <article class="fact">
+            <header class="fact__header">
+                <h2 class="fact__title">Fact</h2>
+            </header>
+            <div class="fact__body">
+                <p class="fact__copy">
+                    The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many
+                    different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which
+                    became an official standard in December 1999.
+                </p>
+            </div>
+            <footer class="fact__footer">
+                <div class="fact__actions">
+                    <button class="fact__btn">Change<i class="fas fa-dice"></i></button>
+                </div>
+            </footer>
+        </article>
+    </aside>
+
+    <!-- End aside right -->
 
 
 

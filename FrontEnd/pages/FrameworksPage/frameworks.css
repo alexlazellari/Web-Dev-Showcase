@@ -4,21 +4,19 @@
     grid-area: main;
     justify-self: center;
     margin-bottom: 2rem;
-    max-width: 1150px;
-    width: 100%;
+    width: 90%;
+}
+
+.main__header{
+    margin-bottom: 2rem;
 }
 
 .main__title{
-    margin-bottom: 2rem;
     text-align: center;
 }
 
-.main__body{
-    padding: 1rem;
-}
-
 .main__copy{
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .main__questions{
@@ -30,7 +28,7 @@
 
 .main__questions .main__article:nth-of-type(n){
     border-radius: 10px;
-    box-shadow: 0 0 15px 0 rgba(150, 150, 150,0.3);
+    box-shadow: 0 0 15px 0 rgba(150, 150, 150, 0.3);
     padding: 1rem;
     transform: scale(0);
 }
@@ -74,7 +72,7 @@
 
 /************************ Media Queries **************************/
 
-@media screen and ( min-width: 720px ){
+@media screen and ( min-width: 820px ){
     .main__questions{
         grid-template-columns: 1fr 1fr;
         font-size: .9rem;

@@ -39,7 +39,7 @@
 }
 
 .main__figure-blockquote{
-    color: goldenrod;
+    color: #444;
     flex-direction: column;
     font-size: .8rem;
     margin-bottom: 2rem;
@@ -73,7 +73,6 @@
 .main__quote-btn:focus{
     outline: 2px solid goldenrod;
 }
-
 
 /************************* End main styling *************************/
 

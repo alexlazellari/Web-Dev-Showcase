@@ -15,34 +15,46 @@
     <link rel="stylesheet" type="text/css" href="./pages/indexAssets/index.css">
     <!-- JavaScript -->
     <script src="pages/indexAssets/script.js" defer></script>
+    <!-- JavaScript Navbar -->
+    <script src="common/navbar.js" defer></script>
 </head>
 
 <body>
 
 
     <!-- Navbar -->
+    
     <header class="header-nav">
         <nav class="nav">
-            <p class="nav__logo">Front End</p>
-            
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
             <ul class="nav__list">
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="#" class="nav__link">Home</a>
                 </li>
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="./pages/LanguagesPage/languages.html" class="nav__link">Languages</a>
                 </li>
-                <li class="nav-nav__item">
+                <li class="nav__item">
                     <a href="./pages/FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
                 </li>
             </ul>
+            
         </nav>
     </header>
+
     <!-- End navbar -->
 
 
 
     <!-- Aside theme -->
+
     <aside class="aside">
         <ul class="aside__list">
             <li class="aside__item">
@@ -71,12 +83,14 @@
             </li>
         </ul>
     </aside>
+
     <!-- Aside theme -->
 
 
 
-    <!-- Main content -->
-    <main class="main">
+     <!-- Main content -->
+
+     <main class="main">
         <figure class="main__figure-blockquote">
             <blockquote cite="" class="main__blockquote">
                 <p class="main__quote">
@@ -138,14 +152,44 @@
 
 
 
+
+
+
+    <!-- Aside right -->
+
+    <aside class="facts">
+        <article class="fact">
+            <header class="fact__header">
+                <h2 class="fact__title">Fact</h2>
+            </header>
+            <div class="fact__body">
+                <p class="fact__copy">
+                    The ability for other developers to read the code is paramount above other concerns, especially if
+                    optimization can be handled another way.
+                </p>
+            </div>
+            <footer class="fact__footer">
+                <div class="fact__actions">
+                    <button class="fact__btn">Change<i class="fas fa-dice"></i></button>
+                </div>
+            </footer>
+        </article>
+    </aside>
+
+    <!-- End aside right -->
+
+
+
     <!-- Footer -->
+
     <footer class="footer">
         <p class="footer__copyright">
             Created by Alex Lazellari. All rights reserved.
         </p>
     </footer>
+
     <!-- End Footer -->
-        
+
 </body>
 
 </html>
