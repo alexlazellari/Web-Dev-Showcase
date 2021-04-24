@@ -1,0 +1,151 @@
+/************************* Styling the main content of the page ***********************/
+
+.main{
+    margin: auto;
+    grid-area: main;
+    width: 90%;
+}
+
+.main__header{
+    margin-bottom: 2rem;
+}
+
+.main__title{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.main__subtitle{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.input-group{
+    width: 100%;
+}
+
+.input-group__label{
+    display: block;
+    font-size: .9rem;
+}
+
+.input-group__input{
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    color: #555;
+    font-size: 1rem;
+    height: 30px;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: .5rem;
+    width: 100%;
+}
+
+.input-group__input:focus{
+    border: 2px solid teal;
+}
+
+.input-group__error{
+    color: #f44336;
+    font-size: .8rem;
+}
+
+.form__fieldset{
+    margin-bottom: 2rem;
+}
+
+
+
+/************************* Fieldset styling *************************/
+
+.form__fieldset{
+    padding: 1rem;
+}
+
+.fieldset__row{
+    margin-bottom: 1rem;
+}
+
+.row__title{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+label{
+    display: block;
+}
+
+.fieldset__checkboxes{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fieldset__textarea{
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+    width: 100%;
+}
+
+.fieldset__textarea:focus{
+    border: 2px solid teal;
+}
+
+/************************* End fieldset styling *************************/
+
+
+
+.form__btn{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    transition: background-color .5s,color .4s;
+}
+
+.form__btn:hover,
+.form__btn:focus{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/************************* End styling the main content of the page *************************/
+
+@media screen and ( min-width: 820px ) {
+    body{
+        grid-template:
+        "nav" auto
+        "main" 1fr
+        "footer" auto / 1fr;
+    }
+    .main{
+        margin: auto;
+        grid-area: main;
+        max-width: 75%;
+    }
+}
+
+@media screen and ( min-width: 1580px ) {
+    body{
+        grid-template:
+        "nav " auto
+        "main" 1fr
+        "footer" auto / 1fr;
+    }
+
+}

@@ -22,13 +22,13 @@ body{
     color: #333;
     grid-template:
     "nav" auto
-    "main" auto
+    "main" 1fr
     "fact" auto
     "aside" auto
     "footer" auto / 1fr;
     display: grid;
     font-family: Roboto;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -258,7 +258,7 @@ body{
         overflow-y: visible;
         padding-top: 0;
         transition:none;
-        width: 50%;
+        width: 60%;
     }
 
     .nav__item {
@@ -274,7 +274,7 @@ body{
         color: #333;
         grid-template:
         "nav nav" auto
-        "aside main" auto
+        "aside main" 1fr
         "fact fact" auto
         "footer footer" auto / 1fr 5fr;
         display: grid;
@@ -282,7 +282,7 @@ body{
     }
 
     .nav__list{
-        width: 40%;
+        width: 45%;
     }
 
     .aside__list{
@@ -307,6 +307,10 @@ body{
         "footer footer footer" auto / 1fr 4fr 1fr;
         display: grid;
         font-family: Roboto;
+    }
+
+    .nav__list{
+        width: 30%;
     }
 
     .aside__image{

@@ -6,7 +6,7 @@ const navList = document.querySelector(".nav__list");
 burger.addEventListener("click", (e) => {
   if (!navList.classList.contains("nav__link-active")) {
     navList.classList.add("nav__link-active");
-    navList.style.height = 10 + "rem";
+    navList.style.height = 13 + "rem";
     return;
   }
   navList.classList.remove("nav__link-active");

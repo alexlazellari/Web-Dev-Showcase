@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Common Styles -->
     <link rel="stylesheet" type="text/css" href="./common/css/common.css">
     <!-- CSS -->
@@ -23,7 +23,7 @@
 
 
     <!-- Navbar -->
-    
+
     <header class="header-nav">
         <nav class="nav">
             <div class="nav__sub">
@@ -44,8 +44,11 @@
                 <li class="nav__item">
                     <a href="./pages/FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
                 </li>
+                <li class="nav__item">
+                    <a href="./pages/SupportPage/support.html" class="nav__link">Support</a>
+                </li>
             </ul>
-            
+
         </nav>
     </header>
 
@@ -88,31 +91,41 @@
 
 
 
-     <!-- Main content -->
+    <!-- Main content -->
 
-     <main class="main">
+    <main class="main">
         <figure class="main__figure-blockquote">
             <blockquote cite="" class="main__blockquote">
                 <p class="main__quote">
                 </p>
             </blockquote>
             <figcaption class="main__quotee"></figcaption>
-            <button title="Change Quote" class="main__quote-btn"><i class="fas fa-dice"></i></button>
         </figure>
-       
+
         <header class="main__header">
             <h1 class="main__title">Web Development</h1>
         </header>
-       
+
         <article class="main__article">
             <h2 class="main__introduction">Brief introduction to front end</h2>
             <aside class="main__aside">
                 <figure class="main__figure">
-                    <img class="main__image" src="./pages/indexAssets/images/frontend.png" alt="laptop on a desk">
+                    <img class="main__image"
+                        srcset="./pages/indexAssets/images/frontend-small.png 460w,
+                         ./pages/indexAssets/images/frontend-medium.png 740w,
+                          ./pages/indexAssets/images/frontend.png 1480w"
+                        sizes="(min-width: 780px) 50vw, (min-width: 1580) 25vw, 100vw"
+                        src="./pages/indexAssets/images/frontend-medium.png"
+                        alt="Graphical represantation of front end">
                     <figcaption class="main__caption">Represantation of front-end development</figcaption>
                 </figure>
                 <figure class="main__figure">
-                    <img class="main__image" src="./pages/indexAssets/images/frontend2.png" alt="laptop on a desk">
+                    <img class="main__image"
+                        srcset="./pages/indexAssets/images/frontend2-small.png 460w,
+                        ./pages/indexAssets/images/frontend2-medium.png 740w,
+                        ./pages/indexAssets/images/frontend2.png 1480w"
+                        sizes="(min-width: 780px) 50vw, (min-width: 1580) 25vw,100vw"
+                        src="./pages/indexAssets/images/frontend2-medium.png" alt="A laptop and a coffe">
                     <figcaption class="main__caption">Front-end status</figcaption>
                 </figure>
             </aside>
@@ -149,9 +162,6 @@
 
     </main>
     <!-- Main content -->
-
-
-
 
 
 

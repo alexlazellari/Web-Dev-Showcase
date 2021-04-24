@@ -60,18 +60,12 @@ const facts = [
 // Variables
 const quoteDOM = document.querySelector(".main__quote");
 const quoteeDOM = document.querySelector(".main__quotee");
-const quoteBtn = document.querySelector(".main__quote-btn");
 const factBtn = document.querySelector(".fact__btn");
 const factCopy = document.querySelector(".fact__copy");
 
 let day = new Date().getDay();
 
 updateQuote(day);
-
-quoteBtn.addEventListener("click", () => {
-  let rdnNbr = Math.floor(Math.random() * 7);
-  updateQuote(rdnNbr);
-});
 
 //Update Quote
 function updateQuote(number) {
