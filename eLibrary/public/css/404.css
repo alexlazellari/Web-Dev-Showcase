@@ -1,0 +1,59 @@
+/************************* Default styling *************************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/************************* End default styling *************************/
+
+
+
+/************************* Error styling *************************/
+
+.error{
+    align-items: center;
+    display: grid;
+    min-height: 100vh;
+}
+
+.error__box{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 2rem 0;
+    text-align: center;
+    width: 90%;
+}
+
+.error__404{
+    color: #f44336;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.error__title{
+    margin-bottom: .5rem;
+}
+
+.error__content{
+    margin-bottom: 2rem;
+}
+
+.error__link{
+    background-color: #f44336;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: .5rem 1rem; 
+    text-decoration: none;
+}
+
+/************************* End error styling *************************/
