@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Alex Lazellari">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <!-- Common Styles -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./support.css">
+    <!-- Navbar -->
+    <script src="../../common/navbar.js" defer></script>
+    <!-- JavaScript -->
+    <script src="./support.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="header-nav">
+        <nav class="nav">
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../LanguagesPage/languages.html" class="nav__link">Languages</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Support</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- End navbar -->
+
+
+
+    <!-- Main content of page -->
+
+    <main class="main">
+
+        <header class="main__header">
+            <h1 class="main__title">Support the team</h1>
+            <p class="main__subtitle">
+                If you want to join us and write some cool things about science,technology, movies and
+                more, please register and answer the questions carefully!.
+            </p>
+        </header>
+
+        <form action="#" method="POST" class="form">
+            <div class="row">
+                <div class="input-group">
+                    <label for="name" class="input-group__label">*Name:</label>
+                    <input name="name" type="text" id="name" class="input-group__input" placeholder="Tomas" required>
+                    
+                </div>
+                <div class="input-group">
+                    <label for="lastname" class="input-group__label">*Lastname:</label>
+                    <input name="lastname" type="text" id="lastname" class="input-group__input" placeholder="Shelby" required>
+                    <span class="input-group__help"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="username" class="input-group__label">*Username:</label>
+                    <input name="username" type="text" id="username" class="input-group__input" placeholder="example12" pattern="^[a-zA-Z0-9]{8,}" maxlength="21" required>
+                    <span class="input-group__help"></span>
+                </div>
+                <div class="input-group">
+                    <label for="email" class="input-group__label">*Email:</label>
+                    <input name="email" type="text" id="email" class="input-group__input" placeholder="example@example.com" required>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="password" class="input-group__label">*Password:</label>
+                    <input name="password" type="password" id="password" class="input-group__input" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> 
+                </div>
+                <div class="input-group">
+                    <label for="cpassword" class="input-group__label">*Confirm password:</label>
+                    <input name="cpassword" type="password" id="cpassword" class="input-group__input" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+                <span class="input-group__error"></span>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="country" class="input-group__label">*Country:</label>
+                    <input name="country" type="text" id="country" class="input-group__input" placeholder="Scotland" list="countries" autocomplete="on" required>
+                    <datalist id="countries">
+                        <option>Albania</option>
+                        <option>Amsterdam</option>
+                        <option>England</option>
+                        <option>Germany</option>
+                        <option>Greece</option>
+                        <option>Poland</option>
+                        <option>Scotland</option>
+                    </datalist>
+                    
+                </div>
+                <div class="input-group">
+                    <label for="address" class="input-group__label">Address:</label>
+                    <input name="address" type="text" id="address" placeholder="Glasgow, g11 xyz" class="input-group__input">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label for="birthdate" class="input-group__label">Birthdate:</label>
+                    <input name="birthdate" type="date" id="birthdate" class="input-group__input" max="2003-01-01">
+                    
+                </div>
+                <div class="input-group">
+                    <label for="tel" class="input-group__label">Telephone:</label>
+                    <input name="tel" type="tel" id="tel" class="input-group__input" placeholder="00XXXXXXXXXXXX" minlength="8" maxlength="20" pattern="[0-9]+">
+                    
+                </div>
+            </div>
+
+            <fieldset class="form__fieldset">
+                
+                <legend class="form__legend">Questionnaire</legend>
+
+                <div class="fieldset__row">
+                    <p class="row__title">What's your gender?</p>
+
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+
+                </div>
+
+                <div class="fieldset__row">
+
+                    <div class="fieldset__checkboxes">
+                        <p class="row__title">What do you find interesting?</p>
+
+                        <label for="science" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="science" id="science">
+                            <span>Science</span> 
+                        </label>
+                        
+                        <label for="movies" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="movies" id="movies">
+                            <span>Movies</span> 
+                        </label>
+                        
+                        <label for="fashion" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="fashion" id="fashion">
+                            <span>Fashion</span> 
+                        </label>
+                        
+                        <label for="sports" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="sports" id="sports">
+                            <span>Sports</span>
+                        </label>
+                        
+                        <label for="travelling" class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="travelling" id="travelling">
+                            <span>Travelling</span>
+                        </label>
+                    </div>
+                  
+                </div>
+
+                <div class="fieldset__row">
+                    <p class="row__title">How you ever support a team again?</p>
+                    
+                    <input type="radio" name="support" id="yes" checked>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="support" id="no">
+                    <label for="no">No</label>
+
+                </div>
+               
+
+                <div class="fieldset__row">
+                    <label for="like-most" class="row__title">What do you like most in this site?</label>
+                    <textarea name="like-most" id="like-most" cols="30" rows="5" class="fieldset__textarea" maxlength="1200"></textarea>
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="reason" class="row__title">Why do you want to join the team?</label>
+                    <textarea name="reason" id="reason" cols="30" rows="5" class="fieldset__textarea" maxlength="1200"></textarea>
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="add" class="row__title">What should we include in our site?</label>
+                    <input name="add" type="text" id="add" maxlength="50">
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="color" class="row__title">Choose you favourite color: </label>
+                    <input type="color" name="color" id="color" value="#008080">
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="backend" class="row__title">What is your favourite backend language?</label>
+                    <input type="text" name="backend" id="backend" autocomplete="on" list="backend-languages">
+                    <datalist id="backend-languages">
+                        <option>Node</option>
+                        <option>Java</option>
+                        <option>.Net</option>
+                        <option>PHP</option>
+                        <option>Ruby</option>
+                    </datalist>
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="situation" class="row__title">What is you situation?</label>
+                    <select name="situation" id="situation">
+                        <option value="student">Student</option>
+                        <option value="Employee">Employee</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+
+                <div class="fieldset__row">
+                    <label for="excited" class="row__title">How much excited are you (1-10) ?</label>
+                    <input type="number" name="excited" id="excited" min="1" max="10" step="1" value="1">
+                </div>
+            </fieldset>
+
+            <div class="row">
+                <details class="form__details">
+                    <summary class="form__summary">
+                        (*) Required Field 
+                    </summary>
+                    <p>Fields that are marked with * (star) are required.</p>
+                </details>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="form__btn">Join</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- End main content of the page -->
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p class="footer__copyright">
+            Created by Alex Lazellari. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- End Footer -->
+
+
+</body>
+
+</html>

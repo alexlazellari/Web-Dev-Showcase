@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name='author' content="Alex Lazellari">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>    
+    <!-- Common Styles -->
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./languages.css">
+    <!-- JavaScript -->
+    <script src="./languages.js" defer></script>
+    <!-- JavaScript Navbar -->
+    <script src="../../common/navbar.js" defer></script>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    
+    <header class="header-nav">
+        <nav class="nav">
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Languages</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../SupportPage/support.html" class="nav__link" >Support</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- End navbar -->
+
+
+
+    <!-- aside theme-->
+
+    <aside class="aside">
+        <ul class="aside__list">
+            <li class="aside__item">
+                <figure class="aside__figure">
+                    <a href="../FrameworksPage/frameworks.html" class="aside__link">
+                        <img src="./images/frameworks.png" alt="html" class="aside__image">
+                    </a>
+                    <figcaption class="aside__caption">Frameworks</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- End aside theme -->
+
+
+
+    <!-- Main content-->
+
+    <main class="main">
+        <header class="main__header">
+            <h2 class="main__title">Programming Languages</h2>
+        </header>
+        <article class="card" id="html">
+            <aside class="card__header">
+                <figure class="card__figure">
+                    <img class="card__image" 
+                    srcset="./images/html-language-small.png 150w,
+                     ./images/html-language-medium.png 300w,
+                     ./images/html-language.png 640w"
+                    sizes="(min-width: 820px) 25vw, 30vw"
+                    src="./images/html-language-medium.png" alt="HTML Logo">
+                </figure>
+            </aside>
+            <div class="card__body">
+                <h2 class="card__title">Hypertext Markup Language</h2>
+                <p class="card__copy">
+                    HTML stands for Hypertext Markup Language. It allows the user to create and structure sections,
+                    paragraphs, headings, links, and blockquotes for web pages and applications. HTML is not a
+                    programming language, meaning it doesn't have the ability to create dynamic functionality.
+                </p>
+                <div class="card__actions">
+                    <a class="card__more" href="https://en.wikipedia.org/wiki/HTML" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </article>
+        <article class="card" id="css">
+            <div class="card__body">
+                <h2 class="card__title">Cascading Style Sheets</h2>
+                <p class="card__copy">
+                    CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to
+                    structure a web document (defining things like headlines and paragraphs, and allowing you to embed
+                    images, video, and other media), CSS comes through and specifies your document’s style—page layouts,
+                    colors, and fonts are all determined with CSS. Think of HTML as the foundation (every house has
+                    one), and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a
+                    mid-century modern home).
+                </p>
+                <div class="card__actions">
+                    <a class="card__more" href="https://en.wikipedia.org/wiki/CSS" target="_blank">Learn More</a>
+                </div>
+            </div>
+            <aside class="card__header">
+                <figure class="card__figure">
+                    <img class="card__image" 
+                    srcset="./images/css-language-small.png 150w,
+                    ./images/css-language-medium.png 300w,
+                    ./images/css-language.png 640w"
+                    sizes="(min-width: 820px) 25vw, 30vw"
+                    src="./images/css-language-small.png" alt="CSS Logo">
+                </figure>
+            </aside>
+        </article>
+        <article class="card" id="javascript">
+            <aside class="card__header">
+                <figure class="card__figure">
+                    <img class="card__image" 
+                    srcset="./images/javascript-language-small.png 150w,
+                    ./images/javascript-language-medium.png 300w,
+                    ./images/javascript-language.png 640w"
+                   sizes="(min-width: 820px) 25vw, 30vw"
+                    src="./images/javascript-language-small.png" alt="JavaScript Logo">
+                </figure>
+            </aside>
+            <div class="card__body">
+                <h2 class="card__title">JavaScript</h2>
+                <p class="card__copy">
+                    JavaScript is a light-weight object-oriented programming language that is used by several websites
+                    for scripting the webpages. It is an interpreted, full-fledged programming language. JavaScript
+                    enables dynamic interactivity on websites when it is applied to an HTML document.
+                    JavaScript helps the users to build modern web applications to interact directly without reloading
+                    the page every time. JavaScript is commonly used to dynamically modify HTML and CSS to update a user
+                    interface by the DOM API. It is mainly used in web applications.
+                </p>
+                <div class="card__actions">
+                    <a class="card__more" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- End main content -->
+
+
+    
+    <!-- Aside right -->
+
+    <aside class="facts">
+        <article class="fact">
+            <header class="fact__header">
+                <h2 class="fact__title">Fact</h2>
+            </header>
+            <div class="fact__body">
+                <p class="fact__copy">
+                    The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many
+                    different versions of HTML. The most widely used version throughout the 2000's was HTML 4.01, which
+                    became an official standard in December 1999.
+                </p>
+            </div>
+            <footer class="fact__footer">
+                <div class="fact__actions">
+                    <button class="fact__btn">Change<i class="fas fa-dice"></i></button>
+                </div>
+            </footer>
+        </article>
+    </aside>
+
+    <!-- End aside right -->
+
+
+
+    <!-- Footer -->
+    
+    <footer class="footer">
+        <p class="footer__copyright">
+            Created by Alex Lazellari. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- End Footer -->
+
+
+
+</body>
+
+</html>

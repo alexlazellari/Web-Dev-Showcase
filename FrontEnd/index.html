@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Alex Lazellari">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Common Styles -->
+    <link rel="stylesheet" type="text/css" href="./common/css/common.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./pages/indexAssets/index.css">
+    <!-- JavaScript -->
+    <script src="pages/indexAssets/script.js" defer></script>
+    <!-- JavaScript Navbar -->
+    <script src="common/navbar.js" defer></script>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <header class="header-nav">
+        <nav class="nav">
+            <div class="nav__sub">
+                <p class="nav__logo">Front End</p>
+                <div class="nav__burger">
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                    <div class="nav__line"></div>
+                </div>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/LanguagesPage/languages.html" class="nav__link">Languages</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/FrameworksPage/frameworks.html" class="nav__link">Frameworks</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/SupportPage/support.html" class="nav__link">Support</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- End navbar -->
+
+
+
+    <!-- Aside theme -->
+
+    <aside class="aside">
+        <ul class="aside__list">
+            <li class="aside__item">
+                <figure class="aside__figure">
+                    <a href="./pages/LanguagesPage/languages.html#html" class="aside__link">
+                        <img src="./pages/indexAssets/images/html.png" alt="html logo" class="aside__image">
+                    </a>
+                    <figcaption class="aside__caption">HTML</figcaption>
+                </figure>
+            </li>
+            <li class="aside__item">
+                <figure class="aside__figure">
+                    <a href="./pages/LanguagesPage/languages.html#css" class="aside__link">
+                        <img src="./pages/indexAssets/images/css.png" alt="css logo" class="aside__image">
+                    </a>
+                    <figcaption class="aside__caption">CSS</figcaption>
+                </figure>
+            </li>
+            <li class="aside__item">
+                <figure class="aside__figure">
+                    <a href="./pages/LanguagesPage/languages.html#javascript" class="aside__link">
+                        <img src="./pages/indexAssets/images/javascript.png" alt="javascript logo" class="aside__image">
+                    </a>
+                    <figcaption class="aside__caption">JavaScript</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Aside theme -->
+
+
+
+    <!-- Main content -->
+
+    <main class="main">
+        <figure class="main__figure-blockquote">
+            <blockquote cite="" class="main__blockquote">
+                <p class="main__quote">
+                </p>
+            </blockquote>
+            <figcaption class="main__quotee"></figcaption>
+        </figure>
+
+        <header class="main__header">
+            <h1 class="main__title">Web Development</h1>
+        </header>
+
+        <article class="main__article">
+            <h2 class="main__introduction">Brief introduction to front end</h2>
+            <aside class="main__aside">
+                <figure class="main__figure">
+                    <img class="main__image"
+                        srcset="./pages/indexAssets/images/frontend-small.png 460w,
+                         ./pages/indexAssets/images/frontend-medium.png 740w,
+                          ./pages/indexAssets/images/frontend.png 1480w"
+                        sizes="(min-width: 780px) 50vw, (min-width: 1580) 25vw, 100vw"
+                        src="./pages/indexAssets/images/frontend-medium.png"
+                        alt="Graphical represantation of front end">
+                    <figcaption class="main__caption">Represantation of front-end development</figcaption>
+                </figure>
+                <figure class="main__figure">
+                    <img class="main__image"
+                        srcset="./pages/indexAssets/images/frontend2-small.png 460w,
+                        ./pages/indexAssets/images/frontend2-medium.png 740w,
+                        ./pages/indexAssets/images/frontend2.png 1480w"
+                        sizes="(min-width: 780px) 50vw, (min-width: 1580) 25vw,100vw"
+                        src="./pages/indexAssets/images/frontend2-medium.png" alt="A laptop and a coffe">
+                    <figcaption class="main__caption">Front-end status</figcaption>
+                </figure>
+            </aside>
+            <p class="main__paragraph">
+                <strong>Web development</strong> is the process of building websites and applications for the
+                internet, or for a private network known as an intranet. Web development is not concerned with the
+                design of a website;
+                rather, it’s all about the coding and programming that powers the website’s functionality.<br>
+                From the most simple, static web pages to social media platforms and apps, from ecommerce websites
+                to content management systems (CMS); all the tools we use via the internet on a daily basis have
+                been built by web developers.<br>
+                Web development can be broken down into three layers: client-side coding (frontend), server-side
+                coding (backend) and database technology.<br><br>
+                Let’s take a look at front end layers in more detail.<br><br>
+                Client-side scripting, or frontend development, refers to everything that the end user experiences
+                directly. Client-side code executes in a web browser and directly relates to what people see when
+                they visit a website. Things like layout, fonts, colours, menus and contact forms are all driven by
+                the frontend.It is the frontend developer’s job to code the frontend of a website or
+                application; that is, the part of the website that the user sees and interacts with. They take the
+                backend data and turn it into something that is easily comprehensible, visually pleasing and fully
+                functional for the everyday user. They will work from designs provided by the web designer and bring
+                them to life using <em>HTML, JavaScript and CSS</em>.<br><br>
+                The frontend developer implements the website’s layout, interactive and navigational elements such
+                as buttons and scrollbars, images, content and internal links (links that navigate from one page to
+                another within the same website). Frontend developers are also responsible for ensuring optimal
+                display across different browsers and devices. They will code the website in such a way that makes
+                it responsive or adaptive to various screen sizes, so that the user gets the same experience whether
+                they’re visiting the website on mobile, desktop or tablet.
+                Frontend developers will also carry out usability tests and fix any bugs that arise. At the same
+                time, they will consider SEO best practices, maintain software workflow management, and develop
+                tools that enhance how the user interacts with a website in any browser.<br><br>
+            </p>
+        </article>
+
+    </main>
+    <!-- Main content -->
+
+
+
+    <!-- Aside right -->
+
+    <aside class="facts">
+        <article class="fact">
+            <header class="fact__header">
+                <h2 class="fact__title">Fact</h2>
+            </header>
+            <div class="fact__body">
+                <p class="fact__copy">
+                    The ability for other developers to read the code is paramount above other concerns, especially if
+                    optimization can be handled another way.
+                </p>
+            </div>
+            <footer class="fact__footer">
+                <div class="fact__actions">
+                    <button class="fact__btn">Change<i class="fas fa-dice"></i></button>
+                </div>
+            </footer>
+        </article>
+    </aside>
+
+    <!-- End aside right -->
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p class="footer__copyright">
+            Created by Alex Lazellari. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- End Footer -->
+
+</body>
+
+</html>
