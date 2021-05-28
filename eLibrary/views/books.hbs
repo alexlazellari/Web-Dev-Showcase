@@ -1,0 +1,28 @@
+<main class="books">
+    {{#each works}}
+    <article class="book">
+        <aside class="book__aside">
+            <figure class="book__figure">
+                <i class="fas fa-book-open"></i>
+            </figure>
+        </aside>
+        <header class="book__header">
+           <p class="book__title">{{this.titleweb}}</p>
+        </header>
+        <div class="book__body">
+             <p class="book__copy">{{this.authorweb}}</p>
+        </div>
+         <footer class="book__footer">
+            {{#if this.saved}}
+                <button id="saved" class="book__btn book__btn--red book__btn--saved" data-id={{this.workid}}>Saved</button>
+                <button id="undo" class="book__btn book__btn--black" data-id={{this.workid}}>Undo</button>
+
+            {{else}}
+                <button id="saved" class="book__btn book__btn--red" data-id={{this.workid}}>Save</button>
+            {{/if}}
+            <button id="undo" class="book__btn book__btn--black book__btn--hide" data-id={{this.workid}}>Undo</button>
+        </footer>
+       
+    </article>
+    {{/each}}
+</main>

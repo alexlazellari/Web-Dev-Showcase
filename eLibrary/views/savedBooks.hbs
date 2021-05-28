@@ -1,0 +1,31 @@
+<main class="list">
+    <header class="saved-books__search">
+        <div class="input-group">
+            <label for="search" class="input-group__label">Search your list:</label>
+            <input type="text" name="keyword" class="input-group__input" id="search-filter" placeholder="Love">
+        </div>
+    </header>
+
+    <section class="saved-books">
+        {{#each works}}
+        <article class="saved-book">
+            <aside class="saved-book__aside">
+                <figure class="saved-book__figure">
+                    <i class="saved-book__icon fas fa-book-open"></i>
+                </figure>
+            </aside>
+            <header class="saved-book__header">
+                <p class="saved-book__title">{{this.title}}</p>
+            </header>
+            <div class="saved-book__body">
+                <p class="saved-book__copy">{{this.author}}</p>
+            </div>
+            <footer class="saved-book__footer">
+                <a id="edit" class="saved-book__btn saved-book__btn--yellow" href="/book/{{this.workid}}">Edit</a>
+                <button id="remove" class="saved-book__btn saved-book__btn--red" data-id={{this.workid}}>Remove</button>
+            </footer>
+        </article>
+        {{/each}}
+    </section>
+
+</main>

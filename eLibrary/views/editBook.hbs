@@ -1,0 +1,26 @@
+<main class="edit-book">
+    <div class="edit-book__container">
+        <header class="edit-book__header">
+            <h2 class="edit-book__title">Edit Book</h2>
+        </header>
+        <div class="edit-book__body">
+            <div class="edit-book__input-group">
+                <label for="title" class="edit-book__label">Title:</label>
+                <input id="title" name="title" type="text" class="edit-book__input" value="{{book.title}}">
+            </div>
+            <div class="edit-book__input-group">
+                <label for="author" class="edit-book__label">Author:</label>
+                <input id="author" name="author" type="text" class="edit-book__input" value="{{book.author}}">
+            </div>
+            <div class="edit-book__input-group">
+                <label for="review" class="edit-book__label">Review:</label>
+                <textarea id="review" type="text" name="review" class="edit-book__textarea">{{book.review}}</textarea>
+            </div>
+        </div>
+        <footer class="edit-book__footer">
+            <div class="edit-book__actions">
+                <button id="update" type="submit" class="edit-book__btn" data-id={{book.workid}}>Save Changes</button>
+            </div>
+        </footer>
+    </div>
+</main>

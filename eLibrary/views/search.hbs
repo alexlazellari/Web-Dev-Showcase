@@ -1,0 +1,39 @@
+<main class="search">
+    <header class="search__header">
+        <h2 class="search__title">Welcome To eLibrary</h2>
+        <h3 class="search__subtitle">You can use e-books anywhere you like!</h3>
+        <i class="search__icon fas fa-book-reader"></i>
+    </header>
+    <form action="./books" method="GET" class="form">
+        <div class="input-group">
+            <label for="search" class="input-group__label">Favourite book or artist:</label>
+            <input type="text" name="keyword" class="input-group__input" id="search" placeholder="Love" required>
+        </div><div class="form__actions">
+            <button type="submit" class="form__btn"><i class="form__icon fas fa-search"></i></button>
+        </div>
+    </form>
+    <section class="cards">
+        <article class="card">
+            <aside class="card__aside">
+                <figure class="card__figure">
+                    <i class="card__icon fas fa-heart"></i>
+                </figure>
+            </aside>
+            <div class="card__body"> 
+                <h3 class="card__title">Save It!</h3>
+                <p class="card__copy">Save your favourite books so you can check them later.</p>
+            </div>
+        </article>
+        <article class="card">
+            <aside class="card__aside">
+                <figure class="card__figure">
+                   <i class="card__icon fas fa-edit"></i>
+                </figure>
+            </aside>
+            <div class="card__body"> 
+                <h3 class="card__title">Edit It!</h3>
+                <p class="card__copy">Edit your book details and add review.</p>
+            </div>
+        </article>
+    </section>
+</main>
