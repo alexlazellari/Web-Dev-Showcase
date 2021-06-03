@@ -243,11 +243,18 @@ function getSavedBooks() {
   Array.from(saved).forEach((book) => {
     let title = book.querySelector(".saved-book__title").textContent;
     let author = book.querySelector(".saved-book__copy").textContent;
+    let review = book.querySelector(".review__content");
+    if (review) {
+      review = review.textContent;
+    } else {
+      review = "";
+    }
     let workid = book.querySelector("#remove").dataset.id;
     savedBooks.push({
       title,
       author,
       workid,
+      review,
     });
   });
 }
@@ -264,29 +271,44 @@ function displayBooks(keyword) {
     }
   });
 
+  let filterList = Handlebars.compile(` 
+    {{#if this}}
+      {{#each this}}
+        <article class="saved-book">
+            <aside class="saved-book__aside">
+                <figure class="saved-book__figure">
+                    <i class="saved-book__icon fas fa-book-open"></i>
+                </figure>
+                <header class="saved-book__header">
+                    <p class="saved-book__title">{{this.title}}</p>
+                </header>
+                <div class="saved-book__body">
+                    <p class="saved-book__copy">{{this.author}}</p>
+                </div>
+            </aside>
+            {{#if this.review}}
+                <div class="saved-book__review">
+                    <h4 class="review__title">Review:</h4>
+                    <p class="review__content">{{this.review}}</p>
+                </div>
+            {{/if}}
+            <footer class="saved-book__footer">
+                <a id="edit" class="saved-book__btn saved-book__btn--yellow" href="/book/{{this.workid}}">Edit</a>
+                <button id="remove" class="saved-book__btn saved-book__btn--red" data-id={{this.workid}}>Remove</button>
+            </footer>
+        </article>
+      {{/each}}
+    {{else}}
+      <div class="nempty">
+          <h1 style="text-align: center;" class="empty__title">No available saved books with this name.</h1>
+      </div>
+    {{/if}}`);
+  let filled = filterList(filterBooks);
+  console.log(filterList(filterBooks));
+  console.log(filterBooks);
+
   let saved_books = document.querySelector(".saved-books");
-  let content = "";
-  filterBooks.forEach((book) => {
-    content += ` 
-      <article class="saved-book">
-        <aside class="saved-book__aside">
-            <figure class="saved-book__figure">
-                <i class="saved-book__icon fas fa-book-open"></i>
-            </figure>
-        </aside>
-        <header class="saved-book__header">
-            <p class="saved-book__title">${book.title}</p>
-        </header>
-        <div class="saved-book__body">
-            <p class="saved-book__copy">${book.author}</p>
-        </div>
-        <footer class="saved-book__footer">
-            <a id="edit" class="saved-book__btn saved-book__btn--yellow" href="/book/${book.workid}">Edit</a>
-            <button id="remove" class="saved-book__btn saved-book__btn--red" data-id=${book.workid}>Remove</button>
-        </footer>
-      </article>`;
-  });
-  saved_books.innerHTML = content;
+  saved_books.innerHTML = filled;
 }
 
 // Remove saved book

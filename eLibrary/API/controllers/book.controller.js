@@ -36,6 +36,8 @@ module.exports.findBook = catchAsyncError(async (req, res, next) => {
 
   let book = Book.find(workid);
 
+  if (!book.length) return next();
+
   let obj = {
     author: book[0].author,
     title: book[0].title,

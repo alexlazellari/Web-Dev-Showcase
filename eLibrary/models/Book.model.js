@@ -66,6 +66,7 @@ function findAll() {
       title: item.title,
       author: item.author,
       workid: item.workid,
+      review: item.review,
     };
 
     return obj;

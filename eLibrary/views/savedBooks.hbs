@@ -1,4 +1,5 @@
 <main class="list">
+    
     <header class="saved-books__search">
         <div class="input-group">
             <label for="search" class="input-group__label">Search your list:</label>
@@ -7,20 +8,26 @@
     </header>
 
     <section class="saved-books">
-        {{#if works}}{
+        {{#if works}}
             {{#each works}}
             <article class="saved-book">
                 <aside class="saved-book__aside">
                     <figure class="saved-book__figure">
                         <i class="saved-book__icon fas fa-book-open"></i>
                     </figure>
+                    <header class="saved-book__header">
+                        <p class="saved-book__title">{{this.title}}</p>
+                    </header>
+                    <div class="saved-book__body">
+                        <p class="saved-book__copy">{{this.author}}</p>
+                    </div>
                 </aside>
-                <header class="saved-book__header">
-                    <p class="saved-book__title">{{this.title}}</p>
-                </header>
-                <div class="saved-book__body">
-                    <p class="saved-book__copy">{{this.author}}</p>
-                </div>
+                {{#if this.review}}
+                    <div class="saved-book__review">
+                        <h4 class="review__title">Review:</h4>
+                        <p class="review__content">{{this.review}}</p>
+                    </div>
+                {{/if}}
                 <footer class="saved-book__footer">
                     <a id="edit" class="saved-book__btn saved-book__btn--yellow" href="/book/{{this.workid}}">Edit</a>
                     <button id="remove" class="saved-book__btn saved-book__btn--red" data-id={{this.workid}}>Remove</button>
@@ -28,8 +35,8 @@
             </article>
             {{/each}}
         {{else}}
-            <div class="empty">
-                <h1 style="text-align: center;" class="empty__title">You haven't save any book.</h1>
+            <div class="nempty">
+                <h1 style="text-align: center;" class="empty__title">You haven't saved any book.</h1>
             </div>
         {{/if}}
     </section>

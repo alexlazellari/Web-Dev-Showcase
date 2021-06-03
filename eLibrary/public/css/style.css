@@ -118,12 +118,27 @@ body {
 
 .nav__link {
     color: #fff;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
 }
 
 /************************* End navbar styling *************************/
+
+
+
+/************************* Empty styling *************************/
+
+.empty{
+    color: #444;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 7rem 0 1.5rem 0;
+    width: 90%;
+}
+
+/************************* End empty styling *************************/
 
 
 
@@ -370,29 +385,34 @@ body {
     width: 90%;
 }
 
+.saved-books__search{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .saved-book{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(150, 150, 150, 0.4);
     margin: 0 auto;
-    margin-bottom: 1.5rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
     position: relative;
     text-align: center;
     transition: transform .5s ease-in-out;
     width: 225px;
+    word-wrap: break-word;
 }
 
 .saved-book:hover{
     transform: scale(1.15);
 }
 
-.saved-books__search{
-    text-align: center;
-    margin-bottom: 3rem;
+.saved-book__aside{
+    margin-bottom: 1rem;
 }
 
-.saved-book__aside{
+.saved-book__figure{
     margin-bottom: 1rem;
 }
 
@@ -402,7 +422,17 @@ body {
 }
 
 .saved-book__header{
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
+}
+
+.saved-book__body{
+    font-weight: 500;
+    text-align: start;
+}
+
+.saved-book__review{
+    color: #444;
+    text-align: start;
 }
 
 .saved-book__footer{
@@ -444,6 +474,15 @@ body {
 
 .saved-book__btn--yellow:hover{
     background-color: #ff9800;
+    color: #fff;
+}
+
+.saved-book__btn--blue{
+    border: 1px solid #04AA6D;
+}
+
+.saved-book__btn--blue:hover{
+    background-color: #04AA6D;
     color: #fff;
 }
 
@@ -555,8 +594,6 @@ body {
     color: #fff;
 }
 
-
-
 /************************* End edit book styling *************************/
 
 
@@ -577,16 +614,18 @@ body {
     width: 100%;
     transform: translateY(110%);
     transition: transform .5s ease-in, opacity .5s ease-in;
+    visibility: hidden;
     z-index: 1;
 }
 
 .alert--deactivate{
+    visibility: unset;
     animation: popDownAlert .5s ease-in .2s forwards;
-
     transform: translateY(-25%);
 }
 
 .alert--activate{
+    visibility: unset;
     animation: popUpAlert .7s ease-out .7s forwards;
 }
 
@@ -648,7 +687,9 @@ body {
 }
 
 .footer__copyright {
+    margin: 0 auto;
     text-align: center;
+    width: 90%;
 }
 
 /************************* Footer styling *************************/
@@ -697,7 +738,7 @@ body {
         list-style-type: none;
         overflow-y: auto;
         transition: none;
-        width: 20%;
+        width: 25%;
     }
 
     .nav__item {
@@ -708,10 +749,6 @@ body {
 
     .nav__item:first-child {
         margin-top: 0rem;
-    }
-
-    .nav__link {
-        font-size: .75rem;
     }
 
     /************************* Navbar styling *************************/
@@ -756,23 +793,37 @@ body {
     /************************* Saved books styling *************************/
 
     .saved-book{
-        align-items: center;
         background-color: #fff;
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 1.5rem;
-        padding: 2rem;
-        position: relative;
+        padding: 1.5rem 2rem;
         text-align: center;
-        width: 475px;
+        width: 500px;
+    }
+
+    .saved-book__body{
+        color: #666;
+        text-align: center;
     }
 
     .saved-book__aside{
-        margin-bottom: 0rem;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .saved-book__figure{
+        margin-bottom: 0;
+        margin-right: 1rem;
     }
 
     .saved-book__header{
         margin-bottom: 0rem;
+        margin-right: 1rem;
+    }
+
+    .saved-book__review{
+        margin-top: 1rem;
     }
 
     /************************* Saved books styling *************************/
@@ -784,7 +835,7 @@ body {
         /************************* Saved books styling *************************/
 
         .saved-book{
-            width: 575px;
+            width: 600px;
         }
     
         /************************* Saved books styling *************************/
@@ -818,7 +869,7 @@ body {
     /************************* Saved books styling *************************/
 
     .saved-book{
-        width: 775px;
+        width: 800px;
     }
 
     .saved-book:hover{
