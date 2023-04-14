@@ -21,8 +21,8 @@ To get started with the projects in this repository, follow the instructions bel
 1. Clone the repository to your local machine.
 2. Navigate to the desired SSR project folder.
 3. Run the following commands in your terminal:
-- npm install
-- npm start
+  - npm install
+  - npm start
 
 4. Open your web browser and visit `http://localhost:3000` (or the port specified in the project's configuration).
 
