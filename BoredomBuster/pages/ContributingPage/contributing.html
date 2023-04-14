@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta authors -->
+    <meta name="author" content="Alex Lazellari">
+    <!-- Meta character-encoding-->
+    <meta charset="UTF-8">
+    <!-- Meta internet explorer edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta title -->
+    <title>Bored Website | Contributing</title>
+    <!-- Meta description -->
+    <meta name="description" content="This is a task for egg lighting.">
+    <!-- Meta keywords -->
+    <meta name="keywords" content="egg lighting, task">
+    <!-- Favicon -->
+    <link rel="icon" sizes="32x32" href="../../favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../ContributingPage/contributing.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <!-- JavaScript -->
+    <script src="../../common/javascript/common.js" defer></script>
+    <script src="../../pages/ContributingPage/contributing.js" defer></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <header class="header">
+        <nav class="nav">
+
+            <div class="nav__sub">
+                <p class="nav__logo">Bored</p>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../../index.html" class="nav__link" title="Home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="../ActivitiesPage/activities.html" class="nav__link" title="Activities">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="./contributing.html" class="nav__link" title="contributing">
+                        <i class="fas fa-plus-square"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- End navbar -->
+
+    <main class="main">
+        <header class="main__header">
+            <h2 class="main__title">Help other people to motivate with your ideas.</h2>
+            <p class="main__subtitle"></p>
+            <p>Listed here are some guidelines to help with your submission: </p>
+            <ul class="guidelines">
+                <li class="guideline">Activities should start with a verb in the form of a command (ex. "Research ...", "Invite ...", "Create ...").</li>
+                <li class="guideline">Try to keep the activities general and without references to companies or name brand products.</li>
+            </ul>
+        </header>
+        <form class="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Contributing Form</legend>
+                <div class="input-group">
+                    <label for="activity">*Activity: </label><br>
+                    <input type="text" id="activity" placeholder="Watch a classic movie" value="" class="input-group__input" minlength="3" maxlength="64" required>
+                    <!-- <span class="input-group__help"></span> -->
+                </div>
+                <div class="form__select">
+                    <label for="select">*Type: </label><br>
+                    <select name="type" id="select" required>
+                        <option value="education">Education</option>
+                        <option value="recreational" selected>Recreational</option>
+                        <option value="social">Social</option>
+                        <option value="diy">DIY</option>
+                        <option value="charity">Charity</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="relaxation">Relaxation</option>
+                        <option value="music">Music</option>
+                        <option value="busywork">Busywork</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="participants">*Participants: </label><br>
+                    <input type="number" id="participants" placeholder="2" value="" min="0" max="1000" class="input-group__input" required>
+                    <!-- <span class="input-group__help"></span> -->
+                </div>
+
+                <div class="form__actions">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+
+            </fieldset>
+            <div class="form__row">
+                <details class="form__details">
+                    <summary class="form__summary">
+                        (*) Required Field 
+                    </summary>
+                    <p>Fields with the star symbol are required.</p>
+                </details>
+            </div>
+        </form>
+        <div class="alert-message">
+            <p class="response-message"></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <p class="footer__copyright">
+            Created by Alex Lazellari. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- End footer -->
+
+</body>
+</html>

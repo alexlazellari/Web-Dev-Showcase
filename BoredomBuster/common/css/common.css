@@ -1,0 +1,124 @@
+/*********************** Basic css rules ***********************/
+
+@font-face {
+    font-family: Dancing_Script;
+    src: url("../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fefefe;
+    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*********************** End basic css rules ***********************/
+
+
+
+/*********************** Navbar styling ***********************/
+
+.header {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    font-size: 1rem;
+    min-width: 260px;
+    padding: .75rem 0;
+}
+
+.nav__logo{
+    color: #ff9800;
+    font-family: Dancing_Script;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__item {
+    border-radius: 5px;
+    cursor: pointer;
+  
+    
+}
+
+.nav__link:hover{
+    color: #000;
+    background-color: rgba(170, 170, 170, 0.4);
+}
+
+.nav__item:last-of-type{
+    margin-right: 0;
+}
+
+.nav__link {
+    border-radius: 5px;
+    color: #333;
+    display: inline-block;
+    margin: 0 .25rem;
+    padding: .5rem;
+    text-decoration: none;
+    transition: .4s background-color;
+}
+
+.active{
+    color:#ff9800
+}
+
+.fas{
+    font-size: 1.3rem;
+}
+
+/*********************** End navbar styling ***********************/
+
+
+
+/*********************** Footer styling ***********************/
+
+.footer{
+    /* background: linear-gradient(#fff,#eee); */
+    min-width: 260px;
+    padding: 1rem 0;
+}
+
+.footer__copyright{
+    font-size: .8rem;
+    text-align: center;
+}
+
+/*********************** End footer styling ***********************/
+
+
+
+/*********************** Media Queries ***********************/
+
+@media screen and ( min-width: 1120px ){
+
+    .nav{
+        max-width: 1120px;
+    }
+
+    .nav__link{
+        padding: .75rem;
+    }
+
+}
+
+/*********************** End media queries ***********************/
