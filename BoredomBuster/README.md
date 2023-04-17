@@ -1,2 +1,2 @@
-# BoredomeBuster
+# BoredomBuster
 This project is built with Javascript, CSS, and HTML. To run it, clone the repository and double-click on the index.html file. One noteworthy decision I made was regarding the Bored API's donation process. While their documentation didn't provide a URL for donations from a separate domain, I reverse-engineered their website's Javascript code to discover the route and create a donation form on my site. I hope that the CORS policy didn't prevent me from doing this.
